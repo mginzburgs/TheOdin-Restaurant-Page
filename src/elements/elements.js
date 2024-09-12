@@ -1,15 +1,15 @@
-export const h1 = (content, elementClass, size) => {
+export const h1 = (content, elementClass) => {
   const h1 = document.createElement("h1");
   h1.setAttribute("class", `${elementClass} heading`);
-  h1.style.fontSize = `${size}px`;
+
   h1.innerText = content;
   return h1;
 };
 
-export const p = (content, elementClass, size) => {
+export const p = (content, elementClass) => {
   const p = document.createElement("p");
   p.setAttribute("class", `${elementClass} paragraph`);
-  p.style.fontSize = `${size}px`;
+
   p.innerText = content;
   return p;
 };
